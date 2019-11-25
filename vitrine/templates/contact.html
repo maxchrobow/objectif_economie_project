@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block seo %}
+<meta name="Description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:title" content="Objectif Économie | Contact ">
+<title>Objectif Économie | Contact </title>
+
+<link rel="canonique" href="https://www.objectifeconomie.fr/" />
+<link type="text/css" href="{% static 'vitrine/css/contact_pc.css' %}" media="only screen and (min-width: 992px)" rel="stylesheet">
+<!-- <link type="text/css" href="{% static 'vitrine/css/contact_tel.css' %}" media="only screen and (max-width: 992px)" rel="stylesheet"> -->
+{% endblock %}
+
+{% block link %}
+{% endblock %}
+
+{% block content %}
+
+<section class="test"id="TEST">
+
+	<section style="display: flex;overflow: hidden;">
+
+		<section id="step1" class="display-block">
+			<h1 class="titre-aide-contact">Objectif Économie vous accompagne dans toutes vos démarches</h1>
+			<div class="div-indication">
+				<span>
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-aide-contact-1.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-aide-contact-1.png' %}">
+						<img alt="aide" src="{% static 'vitrine/img/page_contact/icon-aide-contact-1.png' %}" class="icon-aide-contact">
+					</picture>
+				</span>Besoin d'aide ? Un professionel s'occupera de votre demande sous 24h.
+			</div>
+			<div class="flex-aide-contact-step1">
+
+				<button style="border-bottom: 4px solid #f2bf5f;color:#f2bf5f;" value="Assistance technique" name="sujet" class="bouton-sujet inactive" onclick="make_grey(0)">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-assistance-technique.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-assistance-technique.png' %}">
+						<img alt="assistance-technique" src="{% static 'vitrine/img/page_contact/icon-assistance-technique.png' %}" class="icon-sujet">
+					</picture>
+					Assistance technique
+				</button>
+
+				<button style="border-bottom: 4px solid #536eb7;color:#536eb7;"value="Demander un devis" name="sujet" class="bouton-sujet inactive" onclick="make_grey(1)">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-devis.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-devis.png' %}">
+						<img alt="devis" src="{% static 'vitrine/img/page_contact/icon-devis.png' %}" class="icon-sujet">
+					</picture>
+					Demander un devis
+				</button>
+
+				<button style="border-bottom: 4px solid #75cba8;color:#75cba8;"value="Service Client" name="sujet" class="bouton-sujet inactive" onclick="make_grey(2)">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-service-client.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-service-client.png' %}">
+						<img alt="service-client" src="{% static 'vitrine/img/page_contact/icon-service-client.png' %}" class="icon-sujet">
+					</picture>
+					Service Client
+				</button>
+
+				<button style="border-bottom: 4px solid #ff6161;color:#ff6161;"value="Parrainage" name="sujet" class="bouton-sujet inactive" onclick="make_grey(3)">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-parrainage.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-parrainage.png' %}">
+						<img alt="parrainage" src="{% static 'vitrine/img/page_contact/icon-parrainage.png' %}" class="icon-sujet">
+					</picture>
+					Parrainage
+				</button>
+
+				<button style="border-bottom: 4px solid #d4b496;color:#d4b496;"value="Presse" name="sujet" class="bouton-sujet inactive" onclick="make_grey(4)">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-presse.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-presse.png' %}">
+						<img alt="presse" src="{% static 'vitrine/img/page_contact/icon-presse.png' %}" class="icon-sujet">
+					</picture>
+					Presse
+				</button>
+
+			</div>
+		</section>
+		
+		<section class="step2 display-none">
+			<h1 class="step2-titre-equipement">Assistance technique</h1>
+			<div class="div-indication">
+				<span>
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-aide-contact-1.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-aide-contact-1.png' %}">
+						<img alt="aide" src="{% static 'vitrine/img/page_contact/icon-aide-contact-1.png' %}" class="icon-aide-contact">
+					</picture>
+				</span>Besoin d'aide ? Un professionel s'occupera de votre demande sous 24h.
+			</div>
+			<div class="flex-aide-equipement-step2">
+				<button style="border-bottom: 4px solid #d4b496;color:#d4b496;"value="Pompe à chaleur" name="equipement" class="bouton-equipement inactive" onclick="make_grey(4)">Pompe à chaleur
+				</button>
+				<button style="border-bottom: 4px solid #d4b496;color:#d4b496;"value="Isolation" name="equipement" class="bouton-equipement inactive" onclick="make_grey(4)">Isolation
+				</button>
+				<button style="border-bottom: 4px solid #d4b496;color:#d4b496;"value="Domotique" name="equipement" class="bouton-equipement inactive" onclick="make_grey(4)">Domotique
+				</button>
+				<button style="border-bottom: 4px solid #d4b496;color:#d4b496;"value="Chaudiere" name="equipement" class="bouton-equipement inactive" onclick="make_grey(4)">
+				Chaudiere
+				</button>
+				<button style="border-bottom: 4px solid #d4b496;color:#d4b496;"value="Ballon thermodynamique" name="equipement" class="bouton-equipement inactive" onclick="make_grey(4)">
+				Ballon thermodynamique
+				</button>
+			</div>
+		</section>
+		
+		<section class="step2 display-none">
+			<h1 class="step2-titre-contact">Service Client</h1>
+			<input type="button" value="Service après vente" name="service" class="bouton-service inactive" onclick="">
+			<input type="button" value="Service comptable" name="service" class="bouton-service inactive" onclick="">
+			<input type="button" value="Service téléprospecteur" name="service" class="bouton-service inactive" onclick="">
+			<input type="button" value="Service installateur" name="service" class="bouton-service inactive" onclick="">
+			<input type="button" value="autre" name="service" class="bouton-service inactive" onclick="">
+		</section>
+		
+		<section id="section-devis" class="step2 display-none">
+			<h1 class="step2-titre-contact">Demander un devis</h1>
+			<form method='POST' action=''> {% csrf_token %}
+				<div class="">
+					<div class="">
+						<input type="text" name="q" placeholder="q" class="" required >
+						<input type="text" name="a" placeholder="a" class="" required >
+					</div>
+					<div class="">
+						<input type="text" name="z" placeholder="z" class="" required >
+					</div>
+					<div class="">
+						<input type="submit" name="submit_devis" value="Confirmer">
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<section id="section-parrainage" class="step2 display-none">
+			<h1 class="step2-titre-contact">Parrainage</h1>
+			<form method='POST' action=''> {% csrf_token %}
+				<div class="">
+					<div class="">
+						<input type="text" name="nom_du_parrain" placeholder="Entrer le nom de votre parrain" class="" required >
+						<input type="text" name="prenom_du_parrain" placeholder="Entrer le prénom de votre parrain" class="" required >
+					</div>
+					<div class="">
+						<input type="text" name="numero_du_parrain" placeholder="Entrer le code de parrainage" class="" required >
+					</div>
+					<div class="">
+						<input type="submit" name="submit_parrainage" value="Confirmer">
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<section id="section-presse" class="step2 display-none">
+			<h1 class="step2-titre-contact">Presse</h1>
+			<form method='POST' action=''> {% csrf_token %}
+				<div class="">
+					<div class="">
+						<input type="text" name="a" placeholder="a" class="" required >
+						<input type="text" name="b" placeholder="b" class="" required >
+					</div>
+					<div class="">
+						<input type="text" name="c" placeholder="c" class="" required >
+					</div>
+					<div class="">
+						<input type="submit" name="submit_presse" value="Confirmer">
+					</div>
+				</div>
+			</form>
+		</section>
+
+	</section>
+</section>
+
+<section id="next-prev">
+		<input type="button" value="&#8592; 	Précedent" name="next-prev" class="bouton-next-prev" onclick="nextPrev(-1)">
+		<input type="button" value="Suivant 	&#8594;" name="next-prev" class="bouton-next-prev" onclick="nextPrev(1)">
+	</section>
+<script src="{% static 'vitrine/js/aide_contact.js' %}"></script>
+{% endblock %}

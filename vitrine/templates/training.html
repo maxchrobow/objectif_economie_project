@@ -1,0 +1,109 @@
+{% load staticfiles %}
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Training FlexBox</title>
+</head>
+<body>
+
+
+<style type="text/css">
+	
+.container_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+img{
+	width: 45px;
+}
+
+.container_sous_titre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.container_services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.container_offre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.container_boutons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: space-between;
+}
+
+.container_bouton{
+	display:flex;
+}
+
+
+
+</style>
+
+
+
+<div class="container_section">
+	<h1>Objectif Economie vous accompagne dans toutes vos démarches</h1>
+	<div class="container_sous_titre">
+		<img src="{% static 'vitrine/img/logo_analyse.png' %}">
+		<p>Besoin d'aide ? Un professionnel s'occupera de vous sous 24h.</p>
+	</div>
+	<div class="container_services">
+		<div class="container_offre">
+			<img src="{% static 'vitrine/img/logo_analyse.png' %}">
+			<p>Assistance technique</p>
+		</div>
+		<div class="container_offre">
+			<img src="{% static 'vitrine/img/logo_analyse.png' %}">
+			<p>Demander un devis</p>
+		</div>	
+		<div class="container_offre">
+			<img src="{% static 'vitrine/img/logo_analyse.png' %}">
+			<p>Service client</p>
+		</div>	
+		<div class="container_offre">
+			<img src="{% static 'vitrine/img/logo_analyse.png' %}">
+			<p>Parrainage</p>
+		</div>	
+		<div class="container_offre">
+			<img src="{% static 'vitrine/img/logo_analyse.png' %}">
+			<p>Presse</p>
+		</div>		
+	</div>
+	<div class="container_boutons">
+		<div class="container_bouton">
+			<img src="{% static 'vitrine/img/logo_analyse.png' %}">
+			<p>Précédent</p>
+		</div>
+		<div class="container_bouton">
+			<p>Suivant</p>
+			<img src="{% static 'vitrine/img/logo_analyse.png' %}">
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
